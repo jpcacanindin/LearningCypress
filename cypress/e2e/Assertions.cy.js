@@ -40,7 +40,7 @@ describe('Assertions demo', () => {
         cy.get('[placeholder="Password"]').type('admin123')
         cy.get('.orangehrm-login-button').click()
         
-        let expName = 'Paul Collings';
+        let expName = 'abcrushi bejawada';
 
         cy.get('.oxd-userdropdown-name').then(  (x)=>{
             let actName = x.text()
