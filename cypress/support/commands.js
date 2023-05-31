@@ -33,3 +33,5 @@ Cypress.Commands.add('getIframe', (iframe) => {
         .should('be.visible')
         .then(cy.wrap)
 })
+
+require('@4tw/cypress-drag-drop')
