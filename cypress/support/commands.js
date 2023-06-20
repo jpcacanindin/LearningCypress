@@ -35,3 +35,14 @@ Cypress.Commands.add('getIframe', (iframe) => {
 })
 
 require('@4tw/cypress-drag-drop')
+
+//Creating custom commands
+Cypress.Commands.add('clickLink', (label) => {
+        cy.get('a').contains(label).click()
+})
+
+Cypress.Commands.add('Login', (username,password) => {
+        cy.get('#Email').type(username)
+        cy.get('#Password').type(password)
+        cy.get('form > .buttons > .button-1').click()
+})
